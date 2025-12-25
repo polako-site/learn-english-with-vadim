@@ -65,7 +65,9 @@ Card payment, USDT payment options</p>
                 <MapPin className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Location</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">Online lessons worldwide   </p>
+              <p className="text-primary-foreground/70 text-sm">Online lessons worldwide
+
+Bar, Rista Lekica 12, Montenegro     </p>
             </div>
 
             <div className="text-center sm:text-left">
