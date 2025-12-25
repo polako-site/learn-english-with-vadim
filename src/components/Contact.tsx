@@ -56,7 +56,7 @@ const Contact = () => {
                 <CreditCard className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Payment Methods</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">SEPA transfers, SWIFT, Bank transfers,  
+              <p className="text-primary-foreground/70 text-sm">SEPA transfers, SWIFT, Bank transfers,            
 Card payment, USDT payment options</p>
             </div>
 
