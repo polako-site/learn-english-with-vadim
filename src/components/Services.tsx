@@ -30,7 +30,7 @@ const Services = () => {
       title: "Conversational Classes",
       description: "Build fluency in English or Russian through engaging discussions",
       price: "€16.50",
-      priceNote: "from / 60 min",
+      priceNote: "/ 60 min",
       features: [
         "Natural conversation practice",
         "Pronunciation refinement",
@@ -44,7 +44,7 @@ const Services = () => {
       title: "Business English",
       description: "Professional communication for the global workplace",
       price: "€21",
-      priceNote: "from / 60 min",
+      priceNote: "/ 60 min",
       features: [
         "Job interview preparation",
         "Email & presentation skills",
@@ -58,7 +58,7 @@ const Services = () => {
       title: "General English",
       description: "Comprehensive language skills for everyday life",
       price: "€21",
-      priceNote: "from / 60 min",
+      priceNote: "/ 60 min",
       features: [
         "Grammar fundamentals",
         "Reading & listening",
