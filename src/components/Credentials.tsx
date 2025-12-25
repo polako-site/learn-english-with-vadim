@@ -59,7 +59,7 @@ const Credentials = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Credentials List */}
           <div className="space-y-4">
-            {credentials.map(credential => <div key={credential.title} className="flex items-start gap-4 p-5 rounded-xl bg-card shadow-soft hover:shadow-card transition-all duration-300 group">
+            {credentials.map(credential => <div key={credential.title} className="flex items-start gap-4 p-5 rounded-xl bg-card shadow-soft hover:shadow-card transition-all duration-300 group py-[38px]">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <credential.icon className="w-6 h-6 text-primary" />
                 </div>
@@ -77,7 +77,7 @@ const Credentials = () => {
           <div>
             <div className="relative mb-8">
               <div className="absolute -inset-4 bg-gradient-to-bl from-secondary/20 to-primary/10 rounded-3xl blur-2xl" />
-              <img alt="Vadim receiving degree at University of Bath graduation ceremony" src="/lovable-uploads/0b140fac-80d2-4235-a392-25fdc044ed12.jpg" className="relative w-full rounded-2xl shadow-elevated object-scale-down" />
+              <img alt="Vadim receiving degree at University of Bath graduation ceremony" className="relative w-full rounded-2xl shadow-elevated object-scale-down" src="/lovable-uploads/4443fbf3-e435-4281-a8bf-4aefd25054bc.png" />
             </div>
 
             {/* Stats Grid */}
