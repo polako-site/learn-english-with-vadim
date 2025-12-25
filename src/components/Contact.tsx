@@ -74,7 +74,7 @@ Card payment, USDT payment options</p>
                 <span className="font-semibold">Business</span>
               </div>
               <p className="text-primary-foreground/70 text-sm">Polako Inc DOO  
-PIB 03479218, Reg. No 51069422
+PIB 03479218
               <br />
                 PIB 03479218
               </p>
