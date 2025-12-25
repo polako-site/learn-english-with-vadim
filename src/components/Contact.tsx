@@ -56,7 +56,7 @@ const Contact = () => {
                 <CreditCard className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Payment Methods</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">SEPA transfers, SWIFT, Bank transfers, 
+              <p className="text-primary-foreground/70 text-sm">SEPA transfers, SWIFT, Bank transfers,  
 Card payment, USDT payment options</p>
             </div>
 
@@ -65,7 +65,7 @@ Card payment, USDT payment options</p>
                 <MapPin className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Location</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">Online lessons worldwide
+              <p className="text-primary-foreground/70 text-sm">Online lessons worldwide 
 Bar, Rista Lekica 12, Montenegro</p>
             </div>
 
@@ -74,8 +74,9 @@ Bar, Rista Lekica 12, Montenegro</p>
                 <Building2 className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Business</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">Polako Inc DOO 
-PIB 03479218, Reg. No 51069422<br />
+              <p className="text-primary-foreground/70 text-sm">Polako Inc DOO  
+PIB 03479218, Reg. No 51069422
+              <br />
                 PIB 03479218
               </p>
             </div>
