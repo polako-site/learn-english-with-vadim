@@ -30,10 +30,10 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className={`font-serif text-2xl font-bold transition-colors duration-300 ${
+        <a href="#" className={`font-serif text-xl md:text-2xl font-bold transition-colors duration-300 ${
           isScrolled ? "text-primary" : "text-primary-foreground"
         }`}>
-          English Teacher
+          An English Teacher You Can Trust
         </a>
 
         {/* Desktop Navigation */}
