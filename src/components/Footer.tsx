@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="py-8 bg-muted/50 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="font-serif text-xl font-bold text-primary">Vadim</div>
+          <div className="font-serif text-xl font-bold text-primary">Polako Inc</div>
           
           <nav className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#about" className="hover:text-foreground transition-colors">

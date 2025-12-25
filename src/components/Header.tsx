@@ -30,7 +30,9 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-serif text-2xl font-bold text-primary">
+        <a href="#" className={`font-serif text-2xl font-bold transition-colors duration-300 ${
+          isScrolled ? "text-primary" : "text-primary-foreground"
+        }`}>
           Vadim
         </a>
 
@@ -40,7 +42,11 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300 font-medium"
+              className={`transition-colors duration-300 font-medium ${
+                isScrolled 
+                  ? "text-foreground/80 hover:text-primary" 
+                  : "text-primary-foreground/90 hover:text-primary-foreground"
+              }`}
             >
               {link.label}
             </a>
@@ -52,7 +58,9 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-foreground p-2"
+          className={`md:hidden p-2 transition-colors duration-300 ${
+            isScrolled ? "text-foreground" : "text-primary-foreground"
+          }`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
