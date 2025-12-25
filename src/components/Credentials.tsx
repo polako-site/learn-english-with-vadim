@@ -59,7 +59,7 @@ const Credentials = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-16 items-stretch">
           {/* Credentials List */}
           <div className="space-y-4">
             {credentials.map((credential) => (
@@ -82,13 +82,13 @@ const Credentials = () => {
           </div>
 
           {/* Photo & Stats */}
-          <div className="flex flex-col justify-between h-full">
-            <div className="relative mb-8">
+          <div className="flex flex-col h-full">
+            <div className="relative flex-1 mb-4">
               <div className="absolute -inset-4 bg-gradient-to-bl from-secondary/20 to-primary/10 rounded-3xl blur-2xl" />
               <img
                 src={ceremonyPhoto}
                 alt="Vadim receiving degree at University of Bath graduation ceremony"
-                className="relative w-full max-h-[400px] rounded-2xl shadow-elevated object-cover object-top"
+                className="relative w-full h-full rounded-2xl shadow-elevated object-cover object-top"
               />
             </div>
 
