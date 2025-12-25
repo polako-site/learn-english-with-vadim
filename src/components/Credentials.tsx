@@ -82,13 +82,13 @@ const Credentials = () => {
           </div>
 
           {/* Photo & Stats */}
-          <div>
+          <div className="flex flex-col justify-between h-full">
             <div className="relative mb-8">
               <div className="absolute -inset-4 bg-gradient-to-bl from-secondary/20 to-primary/10 rounded-3xl blur-2xl" />
               <img
                 src={ceremonyPhoto}
                 alt="Vadim receiving degree at University of Bath graduation ceremony"
-                className="relative w-full rounded-2xl shadow-elevated object-cover"
+                className="relative w-full max-h-[400px] rounded-2xl shadow-elevated object-cover object-top"
               />
             </div>
 

@@ -70,17 +70,22 @@ const Hero = () => {
               />
               
               {/* Floating badges */}
-              <div className="absolute -left-4 -top-4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float">
+              <div className="absolute -left-4 top-8 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float">
                 <Award className="w-5 h-5 text-secondary" />
                 <span className="text-sm font-medium">CELTA Certified</span>
               </div>
               
-              <div className="absolute -right-4 bottom-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "2s" }}>
+              <div className="absolute -right-4 top-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "1.5s" }}>
                 <Globe className="w-5 h-5 text-accent" />
                 <span className="text-sm font-medium">4 Languages</span>
               </div>
 
-              <div className="absolute -bottom-4 left-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "4s" }}>
+              <div className="absolute -right-4 bottom-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "3s" }}>
+                <Star className="w-5 h-5 text-secondary" />
+                <span className="text-sm font-medium">IELTS 8.5</span>
+              </div>
+
+              <div className="absolute -bottom-4 left-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "4.5s" }}>
                 <BookOpen className="w-5 h-5 text-primary" />
                 <span className="text-sm font-medium">MA with Distinction</span>
               </div>

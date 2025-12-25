@@ -33,7 +33,7 @@ const Header = () => {
         <a href="#" className={`font-serif text-2xl font-bold transition-colors duration-300 ${
           isScrolled ? "text-primary" : "text-primary-foreground"
         }`}>
-          Vadim
+          English Teacher
         </a>
 
         {/* Desktop Navigation */}
