@@ -44,7 +44,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="mailto:contact@example.com"
+              href="mailto:vadim.panas@bath.edu"
               className="group flex items-center gap-4 p-6 rounded-2xl bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-all duration-300"
             >
               <div className="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -53,7 +53,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-serif font-bold text-xl">Email Me</h3>
                 <p className="text-primary-foreground/70 text-sm">
-                  For inquiries and custom arrangements
+                  vadim.panas@bath.edu
                 </p>
               </div>
             </a>
@@ -87,7 +87,8 @@ const Contact = () => {
                 <span className="font-semibold">Business</span>
               </div>
               <p className="text-primary-foreground/70 text-sm">
-                Registered company in Montenegro
+                Polako Inc, Bar, Montenegro<br />
+                PIB 03479218
               </p>
             </div>
           </div>
@@ -95,11 +96,7 @@ const Contact = () => {
           {/* CTA */}
           <div className="text-center mt-12">
             <Button variant="hero" size="xl" asChild>
-              <a
-                href="https://www.italki.com/en/teacher/3570743"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="mailto:vadim.panas@bath.edu">
                 Book Your First Lesson
               </a>
             </Button>

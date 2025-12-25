@@ -29,17 +29,17 @@ const Hero = () => {
 
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               Personalized lessons for exam preparation, business English, and fluent conversation. 
-              CELTA certified with an MA from the University of Bath.
+              CELTA certified with an MA from the University of Bath, UK.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-serif font-bold text-secondary">5,000+</div>
+                <div className="text-3xl md:text-4xl font-serif font-bold text-secondary">800+</div>
                 <div className="text-sm text-primary-foreground/70">Lessons Taught</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-serif font-bold text-secondary">228</div>
+                <div className="text-3xl md:text-4xl font-serif font-bold text-secondary">800+</div>
                 <div className="text-sm text-primary-foreground/70">Happy Students</div>
               </div>
               <div className="text-center">
@@ -70,7 +70,7 @@ const Hero = () => {
               />
               
               {/* Floating badges */}
-              <div className="absolute -left-4 top-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float">
+              <div className="absolute -left-4 -top-4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float">
                 <Award className="w-5 h-5 text-secondary" />
                 <span className="text-sm font-medium">CELTA Certified</span>
               </div>

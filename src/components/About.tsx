@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Academic Excellence",
-      description: "BA and MA with distinction from top universities, including the University of Bath",
+      description: "BA and MA with distinction from top universities, including the University of Bath, UK",
     },
     {
       icon: MapPin,
@@ -16,12 +16,12 @@ const About = () => {
     {
       icon: Mic,
       title: "Podcast Host",
-      description: "Creator of educational podcasts in both Russian and English",
+      description: "Creator of educational podcasts in English",
     },
     {
       icon: Heart,
       title: "Passionate Educator",
-      description: "16+ years dedicated to helping students achieve their language goals",
+      description: "17+ years dedicated to helping students achieve their language goals",
     },
   ];
 
@@ -48,8 +48,8 @@ const About = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                I'm a CELTA-certified English and Russian tutor with over 17 years of teaching experience. 
-                My journey includes a Master's degree with distinction from the prestigious University of Bath 
+                I'm Vadim, a CELTA-certified English and Russian tutor with over 17 years of teaching experience. 
+                My journey includes a Master's degree with distinction from the prestigious University of Bath, UK, 
                 and a placement at the United Nations as a practising translator.
               </p>
               <p>

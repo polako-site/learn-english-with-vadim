@@ -24,8 +24,16 @@ const Footer = () => {
             </a>
           </nav>
 
-          <div className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Vadim. Made with <Heart className="w-4 h-4 text-secondary fill-current" /> in Montenegro
+          <div className="text-sm text-muted-foreground text-center md:text-right">
+            <div className="flex items-center justify-center md:justify-end gap-1 mb-1">
+              © {currentYear} Polako Inc. Made with <Heart className="w-4 h-4 text-secondary fill-current" /> in Montenegro
+            </div>
+            <div className="text-xs">
+              <a href="mailto:vadim.panas@bath.edu" className="hover:text-foreground transition-colors">
+                vadim.panas@bath.edu
+              </a>
+              {" · "}Bar, Montenegro · PIB 03479218
+            </div>
           </div>
         </div>
       </div>
