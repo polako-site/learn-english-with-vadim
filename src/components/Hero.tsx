@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Award, BookOpen, Globe, Star } from "lucide-react";
 import heroPhoto from "@/assets/hero-photo.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
       
@@ -27,13 +25,17 @@ const Hero = () => {
               Professional
             </h1>
 
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fade-in-up" style={{
+            animationDelay: "0.2s"
+          }}>
               Personalized lessons for exam preparation, business English, and fluent conversation. 
               CELTA certified with an MA from the University of Bath, UK.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <div className="grid grid-cols-3 gap-6 mb-10 animate-fade-in-up" style={{
+            animationDelay: "0.3s"
+          }}>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-serif font-bold text-secondary">15,000+</div>
                 <div className="text-sm text-primary-foreground/70">Lessons Taught</div>
@@ -49,7 +51,9 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{
+            animationDelay: "0.4s"
+          }}>
               <Button variant="hero" size="xl" asChild>
                 <a href="#contact">Book Your Free Trial</a>
               </Button>
@@ -60,14 +64,12 @@ const Hero = () => {
           </div>
 
           {/* Photo */}
-          <div className="order-1 lg:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
+          <div className="order-1 lg:order-2 flex justify-center animate-fade-in" style={{
+          animationDelay: "0.3s"
+        }}>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-secondary/30 to-accent/20 rounded-3xl blur-2xl" />
-              <img
-                src={heroPhoto}
-                alt="Vadim - English Teacher"
-                className="relative w-72 md:w-80 lg:w-96 h-auto rounded-2xl shadow-elevated object-cover"
-              />
+              <img src={heroPhoto} alt="Vadim - English Teacher" className="relative w-72 md:w-80 lg:w-96 h-auto rounded-2xl shadow-elevated object-cover" />
               
               {/* Floating badges */}
               <div className="absolute -left-4 top-8 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float">
@@ -75,17 +77,23 @@ const Hero = () => {
                 <span className="text-sm font-medium">CELTA Certified</span>
               </div>
               
-              <div className="absolute -right-4 top-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "1.5s" }}>
+              <div className="absolute -right-4 top-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{
+              animationDelay: "1.5s"
+            }}>
                 <Globe className="w-5 h-5 text-accent" />
-                <span className="text-sm font-medium">4 Languages</span>
+                <span className="text-sm font-medium">Speaks Russian </span>
               </div>
 
-              <div className="absolute -right-4 bottom-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "3s" }}>
+              <div className="absolute -right-4 bottom-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{
+              animationDelay: "3s"
+            }}>
                 <Star className="w-5 h-5 text-secondary" />
                 <span className="text-sm font-medium">IELTS 8.5</span>
               </div>
 
-              <div className="absolute -bottom-4 left-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{ animationDelay: "4.5s" }}>
+              <div className="absolute -bottom-4 left-1/4 bg-background text-foreground px-4 py-3 rounded-xl shadow-card flex items-center gap-2 animate-float" style={{
+              animationDelay: "4.5s"
+            }}>
                 <BookOpen className="w-5 h-5 text-primary" />
                 <span className="text-sm font-medium">MA with Distinction</span>
               </div>
@@ -100,8 +108,6 @@ const Hero = () => {
           <div className="w-1.5 h-3 bg-primary-foreground/60 rounded-full" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

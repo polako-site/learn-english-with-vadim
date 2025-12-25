@@ -24,7 +24,7 @@ const About = () => {
           {/* Image */}
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-tr from-secondary/20 to-accent/10 rounded-3xl blur-2xl" />
-            <img src={graduationPhoto} alt="Vadim at University of Bath graduation" className="relative w-full max-w-lg mx-auto rounded-2xl shadow-elevated object-cover" />
+            <img alt="Vadim at University of Bath graduation" className="relative w-full max-w-lg mx-auto rounded-2xl shadow-elevated object-cover" src="/lovable-uploads/031525e1-2d7c-4618-b54a-36c52920a2fe.jpg" />
           </div>
 
           {/* Content */}
@@ -36,11 +36,7 @@ const About = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>Hi! I'm Vadim, a CELTA-certified English and Russian tutor with over 17 years of teaching experience. My journey includes a Master's degree with distinction from the prestigious University of Bath, UK, and a placement at the United Nations as a practising translator.</p>
-              <p>
-                Whether you're preparing for Cambridge Exams (FCE, CAE, CPE), IELTS (I scored 8.5 with 9.0 
-                in Speaking and Listening!), mastering Business English, or simply wanting to speak more 
-                confidently, I tailor every lesson to your unique goals.
-              </p>
+              <p>Whether you're preparing for Cambridge Exams (FCE, CAE, CPE), IELTS (I scored 8.5 with 9.0 in Speaking and Listening), mastering Business English, or simply wanting to speak more confidently, I tailor every lesson to your unique goals.</p>
               <p>
                 My teaching philosophy combines academic rigor with a relaxed, communicative approach. 
                 I believe that learning should be engaging—so let's use your interests, whether it's 
@@ -50,7 +46,7 @@ const About = () => {
 
             {/* Highlights */}
             <div className="grid sm:grid-cols-2 gap-4">
-              {highlights.map(item => <div key={item.title} className="flex items-start gap-3 p-4 rounded-xl bg-card shadow-soft hover:shadow-card transition-shadow duration-300">
+              {highlights.map(item => <div key={item.title} className="flex items-start gap-3 p-4 rounded-xl bg-card shadow-soft hover:shadow-card transition-shadow duration-300 py-0">
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
                     <item.icon className="w-5 h-5 text-secondary" />
                   </div>
