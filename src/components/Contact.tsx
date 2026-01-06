@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle, CreditCard, Building2, MapPin } from "lucide-react";
+
 const Contact = () => {
-  return <section id="contact" className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+  return (
+    <section id="contact" className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
@@ -56,8 +58,11 @@ const Contact = () => {
                 <CreditCard className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Payment Methods</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">SEPA transfers, SWIFT, Bank transfers,            
-Card payment, USDT payment options</p>
+              <p className="text-primary-foreground/70 text-sm">
+                SEPA transfers, Bank transfers
+                <br />
+                Card payment, USDT payment options
+              </p>
             </div>
 
             <div className="text-center sm:text-left">
@@ -65,7 +70,11 @@ Card payment, USDT payment options</p>
                 <MapPin className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Location</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">Bar, Rista Lekica 12, Montenegro              Online lessons worldwide      </p>
+              <p className="text-primary-foreground/70 text-sm">
+                Bar, 85000, Rista Lekica 12, Montenegro
+                <br />
+                Online lessons worldwide
+              </p>
             </div>
 
             <div className="text-center sm:text-left">
@@ -73,10 +82,10 @@ Card payment, USDT payment options</p>
                 <Building2 className="w-5 h-5 text-secondary" />
                 <span className="font-semibold">Business</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">Polako Inc DOO      
-PIB 03479218, Reg. No 51069422
-              <br />
-                PIB 03479218
+              <p className="text-primary-foreground/70 text-sm">
+                Polako Inc DOO
+                <br />
+                PIB 03479218, Reg. No 51069422
               </p>
             </div>
           </div>
@@ -94,6 +103,8 @@ PIB 03479218, Reg. No 51069422
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;
