@@ -58,7 +58,7 @@ const Hero = () => {
                 <a href="#contact">Book Your Free Trial</a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="#services">View Services</a>
+                <a href="#services">View Class Options</a>
               </Button>
             </div>
           </div>
