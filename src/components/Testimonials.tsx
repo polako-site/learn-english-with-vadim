@@ -73,6 +73,42 @@ const testimonials = [
     quote: "Thank you for the lesson. It was funny and interesting.",
     date: "May 31, 2020",
   },
+  {
+    name: "Katia",
+    lessons: "2 English lessons",
+    quote: "Vadim is a great person to talk to. He always gives constructive feedback. Thank you!",
+    date: "Apr 12, 2020",
+  },
+  {
+    name: "Alexey",
+    lessons: "79 English lessons",
+    quote: "Vadim is very positive. Ready to support and prompt. The lessons are held in a friendly and positive atmosphere.",
+    date: "Jan 8, 2019",
+  },
+  {
+    name: "Alex",
+    lessons: "11 English lessons",
+    quote: "Perfect as expected",
+    date: "Sep 3, 2018",
+  },
+  {
+    name: "Sara",
+    lessons: "14 English lessons",
+    quote: "It was a great session. Vadim is a very qualified tutor. He does not skip the mistakes that I made and provides much useful exercise. Thank you.",
+    date: "Jun 21, 2018",
+  },
+  {
+    name: "Alexander",
+    lessons: "10 English lessons",
+    quote: "Vadim is a professional teacher who can help to improve your level of English. Highly recommended for upper-intermediate students!",
+    date: "Apr 28, 2018",
+  },
+  {
+    name: "Svetlana",
+    lessons: "42 English lessons",
+    quote: "Thank you, Vadim. You are the best English tutor that I have ever met.",
+    date: "Aug 9, 2018",
+  },
 ];
 
 const Testimonials = () => {
@@ -91,8 +127,16 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-2 mb-4">
             What My Students Say
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Real feedback from students on italki who have transformed their English skills
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+            Real feedback from students who have transformed their English skills.{" "}
+            <a 
+              href="https://www.italki.com/en/teacher/3570743" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-secondary hover:underline"
+            >
+              View all testimonials on italki
+            </a>
           </p>
         </div>
 
