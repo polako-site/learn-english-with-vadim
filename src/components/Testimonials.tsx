@@ -9,10 +9,10 @@ import {
 
 const testimonials = [
   {
-    name: "Stan",
-    lessons: "1 English lesson",
-    quote: "Vadim is the best teacher. His English is really good.",
-    date: "Apr 8, 2024",
+    name: "Svetlana",
+    lessons: "42 English lessons",
+    quote: "Thank you, Vadim. You are the best English tutor that I have ever met.",
+    date: "Aug 9, 2018",
   },
   {
     name: "Sash",
@@ -49,7 +49,7 @@ const testimonials = [
   },
   {
     name: "Konstantin K.",
-    lessons: "61 Russian lessons",
+    lessons: "61 English lessons",
     quote: "Great teacher! It was a pleasure to talk!",
     date: "Feb 16, 2021",
   },
@@ -104,10 +104,10 @@ const testimonials = [
     date: "Apr 28, 2018",
   },
   {
-    name: "Svetlana",
-    lessons: "42 English lessons",
-    quote: "Thank you, Vadim. You are the best English tutor that I have ever met.",
-    date: "Aug 9, 2018",
+    name: "Stan",
+    lessons: "1 English lesson",
+    quote: "Vadim is the best teacher. His English is really good.",
+    date: "Apr 8, 2024",
   },
 ];
 

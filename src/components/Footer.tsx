@@ -19,6 +19,9 @@ const Footer = () => {
             <a href="#credentials" className="hover:text-foreground transition-colors">
               Credentials
             </a>
+            <a href="#testimonials" className="hover:text-foreground transition-colors">
+              Testimonials
+            </a>
             <a href="#contact" className="hover:text-foreground transition-colors">
               Contact
             </a>
@@ -57,7 +60,14 @@ const Footer = () => {
             Privacy Policy
           </a>
           <span className="text-border">·</span>
-          <span>Terms of Use</span>
+          <a 
+            href="/documents/TERMS_OF_USE.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
+          >
+            Terms of Use
+          </a>
         </div>
       </div>
     </footer>
