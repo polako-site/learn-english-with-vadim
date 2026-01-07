@@ -12,7 +12,7 @@ const About = () => {
   }, {
     icon: Mic,
     title: "Podcast Host",
-    description: "Creator of educational podcasts in English"
+    description: "Co-creator of educational podcasts for learners of English"
   }, {
     icon: Heart,
     title: "Passionate Educator",
