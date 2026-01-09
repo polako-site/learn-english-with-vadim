@@ -63,7 +63,7 @@ const CookieConsent = () => {
 
   return (
     <>
-      <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background border-t border-border shadow-lg">
+      <div className="fixed bottom-20 left-4 right-4 md:left-auto md:right-4 md:max-w-md z-50 p-4 bg-background border border-border rounded-lg shadow-lg">
         <div className="container mx-auto flex flex-col gap-4">
           <div className="flex items-start gap-3 text-sm text-muted-foreground">
             <Cookie className="w-5 h-5 text-secondary shrink-0 mt-0.5" />

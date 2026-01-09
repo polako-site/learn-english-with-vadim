@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="font-serif text-xl font-bold text-primary">Polako Inc</div>
           
-          <nav className="flex items-center gap-6 text-sm text-muted-foreground">
+          <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm text-muted-foreground">
             <a href="#about" className="hover:text-foreground transition-colors">
               About
             </a>
@@ -28,8 +28,8 @@ const Footer = () => {
           </nav>
 
           <div className="text-sm text-muted-foreground text-center md:text-right">
-            <div className="flex items-center justify-center md:justify-end gap-1 mb-1">
-              © {currentYear} Polako Inc. Made with <Heart className="w-4 h-4 text-secondary fill-current" /> in Montenegro
+            <div className="mb-1">
+              © {currentYear} Polako Inc.
             </div>
             <div className="text-xs">
               <a href="mailto:vadim.panas@bath.edu" className="hover:text-foreground transition-colors">
@@ -61,12 +61,12 @@ const Footer = () => {
           </a>
           <span className="text-border">·</span>
           <a 
-            href="/documents/TERMS_OF_USE.pdf" 
+            href="/documents/REFUND_POLICY.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-foreground transition-colors"
           >
-            Terms of Use
+            Refund Policy
           </a>
         </div>
       </div>
