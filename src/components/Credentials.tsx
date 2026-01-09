@@ -56,9 +56,9 @@ const Credentials = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Credentials List */}
-          <div className="space-y-4">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-8 items-stretch">
+          {/* Credentials List - 55% on desktop */}
+          <div className="w-full lg:w-[55%] space-y-4">
             {credentials.map(credential => <div key={credential.title} className="flex items-start gap-4 p-5 rounded-xl bg-card shadow-soft hover:shadow-card transition-all duration-300 group py-[30px]">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <credential.icon className="w-6 h-6 text-primary" />
@@ -73,11 +73,25 @@ const Credentials = () => {
               </div>)}
           </div>
 
-          {/* Photo & Stats */}
-          <div>
+          {/* Photo & Stats - 45% on desktop */}
+          <div className="w-full lg:w-[45%] mt-4 md:mt-4 lg:mt-0 flex flex-col justify-center">
             <div className="relative mb-8">
               <div className="absolute -inset-4 bg-gradient-to-bl from-secondary/20 to-primary/10 rounded-3xl blur-2xl" />
-              <img alt="Vadim receiving degree at University of Bath graduation ceremony" className="relative w-full rounded-2xl shadow-elevated object-scale-down" src="/lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg" />
+              <picture>
+                <source 
+                  type="image/webp" 
+                  srcSet="/lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 480w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 768w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 1200w"
+                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 45vw"
+                />
+                <img 
+                  alt="Vadim receiving degree at University of Bath graduation ceremony" 
+                  className="relative w-full max-w-[600px] mx-auto rounded-lg shadow-md object-cover" 
+                  src="/lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg"
+                  srcSet="/lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 480w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 768w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 1200w"
+                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 45vw"
+                  loading="lazy"
+                />
+              </picture>
             </div>
 
             {/* Stats Grid */}
