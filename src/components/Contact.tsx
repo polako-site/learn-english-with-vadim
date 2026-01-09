@@ -90,15 +90,44 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* CTA */}
+          {/* Payment Button with Logos */}
           <div className="text-center mt-12">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" 
+                alt="Visa" 
+                className="h-8 object-contain"
+              />
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" 
+                alt="Mastercard" 
+                className="h-8 object-contain"
+              />
+            </div>
             <Button variant="hero" size="xl" asChild>
               <a href="mailto:vadim.panas@bath.edu">
-                Book Your First Lesson
+                Pay for Lessons
               </a>
             </Button>
-            <p className="text-primary-foreground/60 text-sm mt-4">
-              Trial lessons available • Flexible scheduling
+            <p className="text-primary-foreground/60 text-xs mt-4 max-w-md mx-auto">
+              By clicking this button, I agree to the{" "}
+              <a 
+                href="/documents/PUBLIC_OFFER.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-primary-foreground transition-colors"
+              >
+                Terms & Conditions
+              </a>{" "}
+              and{" "}
+              <a 
+                href="/documents/REFUND_POLICY.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-primary-foreground transition-colors"
+              >
+                Refund Policy
+              </a>
             </p>
           </div>
         </div>
