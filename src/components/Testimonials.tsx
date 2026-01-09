@@ -11,103 +11,72 @@ const testimonials = [
   {
     name: "Svetlana",
     lessons: "42 English lessons",
-    quote: "Thank you, Vadim. You are the best English tutor that I have ever met.",
-    date: "Aug 9, 2018",
+    quote: "You are the best English tutor that I have ever met.",
   },
   {
     name: "Sash",
     lessons: "130 English lessons",
     quote:
-      "I gotta say, my confidence in speaking English has really gone up since I started taking lessons with this tutor. I feel like I can communicate way better than before. If you're looking for someone to help you improve your English, I highly recommend this tutor!",
-    date: "Apr 26, 2023",
+      "My confidence in speaking English has really gone up since I started taking lessons with this tutor. I feel like I can communicate way better than before.",
   },
   {
     name: "Vadim",
     lessons: "6 English lessons",
     quote:
-      "I recently had the pleasure of working with Vadim who I would highly recommend to anyone looking to improve their language skills. Vadim was extremely reliable, always showing up on time and consistently providing valuable feedback to help me improve. One of the things I appreciated most about Vadim was the quality of materials used during our sessions. The materials were well-organized and tailored to my specific needs and interests, making our lessons engaging and productive. Overall, I found Vadim to be knowledgeable, patient, and dedicated to helping me reach my language goals.",
-    date: "Mar 3, 2023",
+      "I found Vadim to be knowledgeable, patient, and dedicated to helping me reach my language goals.",
   },
   {
     name: "Kate",
     lessons: "105 English lessons",
     quote:
-      "Today I had the lesson for my special needs, and it was amazing. Vadim had prepared a lot of material, and we practiced the whole lesson. It was very helpful. Thank you very much.",
-    date: "Feb 25, 2023",
+      "Vadim is a great teacher. During the lessons, he always gives good examples that can help me to understand better grammar rules.",
   },
   {
     name: "Olga",
     lessons: "11 English lessons",
-    quote: "Vadim is an amazing professional!",
-    date: "Dec 3, 2022",
+    quote: "Vadim is an amazing professional",
   },
   {
     name: "Olya",
     lessons: "64 English lessons",
-    quote: "Excellent as usual!",
-    date: "Mar 2, 2021",
+    quote: "Excellent as usual",
   },
   {
-    name: "Konstantin K.",
+    name: "Konstantin",
     lessons: "61 English lessons",
-    quote: "Great teacher! It was a pleasure to talk!",
-    date: "Feb 16, 2021",
+    quote: "Great teacher!",
   },
   {
     name: "Alex",
     lessons: "66 English lessons",
     quote:
-      "Many thanks for our lessons. All of them were very good and interesting. I hope we'll continue our lessons in a couple of months or so.",
-    date: "Sep 17, 2020",
+      "Many thanks for our lessons. All of them were very good and interesting.",
   },
   {
     name: "Valery",
     lessons: "21 English lessons",
     quote:
-      "Vadim is a wonderful teacher! Each lesson is structured and interesting. In addition, Vadim is a very nice person",
-    date: "Jul 8, 2020",
-  },
-  {
-    name: "Peter",
-    lessons: "76 English lessons",
-    quote: "Thank you for the lesson. It was funny and interesting.",
-    date: "May 31, 2020",
+      "Vadim is a wonderful teacher! Each lesson is structured and interesting.",
   },
   {
     name: "Katia",
     lessons: "2 English lessons",
-    quote: "Vadim is a great person to talk to. He always gives constructive feedback. Thank you!",
-    date: "Apr 12, 2020",
+    quote: "Vadim is a great person to talk to. He always gives constructive feedback.",
   },
   {
     name: "Alexey",
     lessons: "79 English lessons",
-    quote: "Vadim is very positive. Ready to support and prompt. The lessons are held in a friendly and positive atmosphere.",
-    date: "Jan 8, 2019",
-  },
-  {
-    name: "Alex",
-    lessons: "11 English lessons",
-    quote: "Perfect as expected",
-    date: "Sep 3, 2018",
+    quote: "The lessons are held in a friendly and positive atmosphere.",
   },
   {
     name: "Sara",
     lessons: "14 English lessons",
-    quote: "It was a great session. Vadim is a very qualified tutor. He does not skip the mistakes that I made and provides much useful exercise. Thank you.",
-    date: "Jun 21, 2018",
+    quote: "Vadim is a very qualified tutor. He does not skip the mistakes that I made and provides much useful exercise.",
   },
   {
     name: "Alexander",
     lessons: "10 English lessons",
-    quote: "Vadim is a professional teacher who can help to improve your level of English. Highly recommended for upper-intermediate students!",
-    date: "Apr 28, 2018",
-  },
-  {
-    name: "Stan",
-    lessons: "1 English lesson",
-    quote: "Vadim is the best teacher. His English is really good.",
-    date: "Apr 8, 2024",
+    quote: "Highly recommended for upper-intermediate students!",
   },
 ];
 
@@ -181,9 +150,6 @@ const Testimonials = () => {
                           </p>
                         </div>
                       </div>
-                      <p className="text-muted-foreground/60 text-xs mt-2">
-                        {testimonial.date}
-                      </p>
                     </div>
                   </div>
                 </CarouselItem>
@@ -193,6 +159,17 @@ const Testimonials = () => {
             <CarouselNext className="hidden md:flex -right-12" />
           </Carousel>
         </div>
+
+        {/* Disclaimer */}
+        <p className="text-center text-muted-foreground/70 text-xs mt-12 max-w-3xl mx-auto leading-relaxed">
+          Shortened and anonymised testimonials are published on the basis of Polako Inc's legitimate interest in demonstrating service quality, for informational purposes only. If you would like your testimonial removed, please contact:{" "}
+          <a 
+            href="mailto:vadim.panas@bath.edu" 
+            className="text-secondary hover:underline"
+          >
+            vadim.panas@bath.edu
+          </a>
+        </p>
       </div>
     </section>
   );
