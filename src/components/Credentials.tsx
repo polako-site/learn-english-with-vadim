@@ -105,7 +105,7 @@ const Credentials = () => {
               <div className="absolute -inset-4 bg-gradient-to-bl from-secondary/20 to-primary/10 rounded-3xl blur-2xl" />
               <picture>
                 <source type="image/webp" srcSet="/lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 480w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 768w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 45vw" />
-                <img alt="Vadim receiving degree at University of Bath graduation ceremony" className="relative w-full max-w-[600px] mx-auto rounded-lg shadow-md object-cover" srcSet="/lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 480w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 768w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 45vw" loading="lazy" src="/lovable-uploads/14193ecb-aeb4-4d05-9319-3fbe81f6d5c1.jpg" />
+                <img alt="Vadim receiving degree at University of Bath graduation ceremony" srcSet="/lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 480w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 768w, /lovable-uploads/7e735657-aa84-40a3-9aa4-c9c6748a6c26.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 45vw" loading="lazy" src="/lovable-uploads/8811c99e-bd07-4e71-a965-07f779fa8889.png" className="relative w-full max-w-[450px] mx-auto rounded-lg shadow-md object-cover" />
               </picture>
             </div>
 
