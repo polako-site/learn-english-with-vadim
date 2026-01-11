@@ -33,10 +33,10 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className={`font-serif text-lg md:text-xl font-bold transition-colors duration-300 ${
+        <a href="#" className={`font-serif text-xl md:text-2xl font-bold transition-colors duration-300 ${
           isScrolled ? "text-primary" : "text-primary-foreground"
         }`}>
-          Expert English & Russian Tuition
+          Tailored English tuition
         </a>
 
         {/* Desktop Navigation */}
