@@ -55,7 +55,7 @@ const Hero = () => {
             animationDelay: "0.4s"
           }}>
               <Button variant="hero" size="xl" asChild>
-                <a href="#contact">Book Your Free Trial</a>
+                <a href="#booking">Book a Trial</a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="#services">View Class Options</a>

@@ -5,6 +5,8 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Credentials from "@/components/Credentials";
 import Testimonials from "@/components/Testimonials";
+import BookingCalendar from "@/components/BookingCalendar";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
@@ -13,7 +15,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Vadim | English & Russian Teacher | CELTA Certified | 17+ Years Experience</title>
+        <title>Expert English & Russian Tuition | CELTA Certified | 17+ Years Experience</title>
         <meta
           name="description"
           content="Professional English and Russian lessons with a CELTA-certified teacher. IELTS, Cambridge exams, business English, and conversation classes. MA from University of Bath. Book your trial lesson today."
@@ -25,7 +27,7 @@ const Index = () => {
         <link rel="canonical" href="https://vadim-teacher.com" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Vadim | Professional English & Russian Teacher" />
+        <meta property="og:title" content="Expert English & Russian Tuition | Vadim Panas" />
         <meta
           property="og:description"
           content="Master English with a Cambridge-certified professional. 17+ years of experience, IELTS 8.5, MA from University of Bath."
@@ -65,6 +67,8 @@ const Index = () => {
           <Services />
           <Credentials />
           <Testimonials />
+          <BookingCalendar />
+          <FAQ />
           <Contact />
         </main>
         <Footer />
