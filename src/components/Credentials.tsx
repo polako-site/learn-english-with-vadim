@@ -69,34 +69,34 @@ const Credentials = () => {
 
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8 items-stretch">
           {/* Credentials List - 55% on desktop */}
-          <div className="w-full lg:w-[55%] space-y-4">
+          <div className="w-full lg:w-[55%] space-y-3 flex flex-col">
             {credentials.map((credential) => {
               const CardContent = (
                 <div
-                  className={`flex items-start gap-4 p-5 rounded-xl bg-card shadow-soft hover:shadow-card transition-all duration-300 group py-[30px] ${
+                  className={`flex items-start gap-4 p-4 rounded-xl bg-card shadow-soft hover:shadow-card transition-all duration-300 group ${
                     credential.certificateImage ? "cursor-pointer" : ""
                   }`}
                 >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <credential.icon className="w-6 h-6 text-primary" />
+                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <credential.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
-                      <h3 className="font-serif font-bold text-lg text-foreground">
+                      <h3 className="font-serif font-bold text-base text-foreground">
                         {credential.title}
                       </h3>
                       {credential.certificateImage && (
-                        <ExternalLink className="w-4 h-4 text-secondary opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <ExternalLink className="w-3 h-3 text-secondary opacity-0 group-hover:opacity-100 transition-opacity" />
                       )}
                     </div>
                     <p className="text-secondary font-medium text-sm">
                       {credential.institution}
                     </p>
-                    <p className="text-muted-foreground text-sm mt-1">
+                    <p className="text-muted-foreground text-xs mt-0.5">
                       {credential.description}
                     </p>
                     {credential.certificateImage && (
-                      <p className="text-xs text-secondary/70 mt-2">
+                      <p className="text-xs text-secondary/70 mt-1">
                         Click to view certificate
                       </p>
                     )}
@@ -121,7 +121,7 @@ const Credentials = () => {
           </div>
 
           {/* Photo & Stats - 45% on desktop */}
-          <div className="w-full lg:w-[45%] mt-4 md:mt-4 lg:mt-0 flex flex-col justify-center">
+          <div className="w-full lg:w-[45%] mt-4 md:mt-4 lg:mt-0 flex flex-col justify-between">
             <div className="relative mb-8">
               <div className="absolute -inset-4 bg-gradient-to-bl from-secondary/20 to-primary/10 rounded-3xl blur-2xl" />
               <picture>

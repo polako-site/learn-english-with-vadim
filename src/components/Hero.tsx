@@ -28,7 +28,7 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fade-in-up" style={{
             animationDelay: "0.2s"
           }}>
-              Personalized lessons for exam preparation, business English, and fluent conversation. 
+              Personalised lessons for exam preparation, business English, and fluent conversation. 
               CELTA certified with an MA from the University of Bath, UK.
             </p>
 
