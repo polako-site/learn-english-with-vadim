@@ -12,7 +12,7 @@ const Services = () => {
   }, {
     icon: MessageCircle,
     title: "Conversational Classes",
-    description: "Build fluency in English or Russian through engaging discussions",
+    description: "Build fluency in English through engaging discussions",
     price: "€16.50",
     priceNote: "/ 60 min",
     features: ["Natural conversation practice", "Pronunciation refinement", "Vocabulary expansion", "Cultural insights"],
@@ -81,7 +81,7 @@ const Services = () => {
               </ul>
 
               <Button variant={service.featured ? "hero" : "outline"} className="w-full" asChild>
-                <a href="#contact">Get Started</a>
+                <a href="#booking">Get Started</a>
               </Button>
             </div>)}
         </div>

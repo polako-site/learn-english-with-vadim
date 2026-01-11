@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+import { Quote, User } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -136,10 +136,8 @@ const Testimonials = () => {
                     {/* Author Info */}
                     <div className="mt-auto pt-4 border-t border-border">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                          <span className="text-primary font-semibold text-sm">
-                            {testimonial.name.charAt(0)}
-                          </span>
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border border-primary/10">
+                          <User className="w-5 h-5 text-primary/60" />
                         </div>
                         <div>
                           <p className="font-semibold text-foreground text-sm">
