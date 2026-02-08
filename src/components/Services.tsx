@@ -1,40 +1,92 @@
 import { Button } from "@/components/ui/button";
-import { BookOpen, Briefcase, MessageCircle, Target, GraduationCap, Globe, Check } from "lucide-react";
+import { BookOpen, Briefcase, MessageCircle, Target, GraduationCap, Globe, Check, Users, BookMarked, Sparkles, Clock } from "lucide-react";
+
 const Services = () => {
-  const services = [{
-    icon: Target,
-    title: "Exam Preparation",
-    description: "IELTS, Cambridge FCE/CAE/CPE, and other international exams",
-    price: "€25",
-    priceNote: "per 60 min",
-    features: ["Personalized study plans", "Practice tests & feedback", "Speaking & writing focus", "Score improvement strategies"],
-    featured: true
-  }, {
-    icon: MessageCircle,
-    title: "Conversational Classes",
-    description: "Build fluency in English through engaging discussions",
-    price: "€16.50",
-    priceNote: "/ 60 min",
-    features: ["Natural conversation practice", "Pronunciation refinement", "Vocabulary expansion", "Cultural insights"],
-    featured: false
-  }, {
-    icon: Briefcase,
-    title: "Business English",
-    description: "Professional communication for the global workplace",
-    price: "€21",
-    priceNote: "/ 60 min",
-    features: ["Job interview preparation", "Email & presentation skills", "Meeting vocabulary", "Industry-specific terms"],
-    featured: false
-  }, {
-    icon: BookOpen,
-    title: "General English",
-    description: "Comprehensive language skills for everyday life",
-    price: "€21",
-    priceNote: "/ 60 min",
-    features: ["Grammar fundamentals", "Reading & listening", "Practical vocabulary", "British vs American English"],
-    featured: false
-  }];
-  return <section id="services" className="py-24 bg-muted/30">
+  const services = [
+    {
+      icon: Target,
+      title: "Exam Preparation",
+      description: "IELTS, Cambridge FCE/CAE/CPE, and other international exams",
+      price: "€25.00",
+      priceNote: "/ 60 min",
+      features: ["Personalised study plans", "Practice tests & feedback", "Speaking & writing focus", "Score improvement strategies"],
+      featured: true,
+      badge: null,
+    },
+    {
+      icon: MessageCircle,
+      title: "Conversational English",
+      description: "Build fluency in English through engaging discussions",
+      price: "€16.50",
+      priceNote: "/ 60 min",
+      features: ["Natural conversation practice", "Pronunciation refinement", "Vocabulary expansion", "Cultural insights"],
+      featured: false,
+      badge: null,
+    },
+    {
+      icon: Sparkles,
+      title: "Conversational Russian",
+      description: "Develop confidence in spoken Russian with a native speaker",
+      price: "€16.50",
+      priceNote: "/ 60 min",
+      features: ["Real-life dialogue practice", "Pronunciation & intonation", "Everyday vocabulary building", "Cultural context & nuances"],
+      featured: false,
+      badge: "New",
+    },
+    {
+      icon: Briefcase,
+      title: "Business English",
+      description: "Professional communication for the global workplace",
+      price: "€21.00",
+      priceNote: "/ 60 min",
+      features: ["Job interview preparation", "Email & presentation skills", "Meeting vocabulary", "Industry-specific terms"],
+      featured: false,
+      badge: null,
+    },
+    {
+      icon: BookOpen,
+      title: "General English",
+      description: "Comprehensive language skills for everyday life",
+      price: "€21.00",
+      priceNote: "/ 60 min",
+      features: ["Grammar fundamentals", "Reading & listening", "Practical vocabulary", "British vs American English"],
+      featured: false,
+      badge: null,
+    },
+    {
+      icon: BookMarked,
+      title: "English Grammar",
+      description: "Strengthen your grammar foundation for clear, accurate English",
+      price: "€21.00",
+      priceNote: "/ 60 min",
+      features: ["Structured grammar drills", "Error correction & feedback", "Tenses, articles & prepositions", "Written accuracy practice"],
+      featured: false,
+      badge: null,
+    },
+    {
+      icon: Clock,
+      title: "Trial Lesson",
+      description: "Meet the teacher, discuss your goals and try the format — 30–40 minutes",
+      price: "€13.00",
+      priceNote: "/ session",
+      features: ["Written placement test", "Oral assessment", "Personalised learning strategy", "Future class planning"],
+      featured: false,
+      badge: "Try it",
+    },
+    {
+      icon: Users,
+      title: "Group Lessons",
+      description: "General English & Grammar in a friendly, social setting",
+      price: "From €10.00",
+      priceNote: "/ 60 min",
+      features: ["Groups of 4–6 students", "Friendly atmosphere", "Convenient scheduling", "Homework included"],
+      featured: false,
+      badge: "Coming soon",
+    },
+  ];
+
+  return (
+    <section id="services" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -43,47 +95,84 @@ const Services = () => {
             Tailored Lessons for Your Goals
           </h2>
           <p className="text-muted-foreground">
-            From exam preparation to casual conversation, find the perfect program 
+            From exam preparation to casual conversation, find the perfect program
             to achieve your language learning objectives.
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map(service => <div key={service.title} className={`relative rounded-2xl p-6 transition-all duration-300 hover:shadow-elevated ${service.featured ? "bg-primary text-primary-foreground shadow-card" : "bg-card text-card-foreground shadow-soft hover:shadow-card"}`}>
-              {service.featured && <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground text-xs font-semibold px-3 py-1 rounded-full">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className={`relative rounded-2xl p-6 transition-all duration-300 hover:shadow-elevated ${
+                service.featured
+                  ? "bg-primary text-primary-foreground shadow-card"
+                  : "bg-card text-card-foreground shadow-soft hover:shadow-card"
+              }`}
+            >
+              {service.featured && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground text-xs font-semibold px-3 py-1 rounded-full">
                   Most Popular
-                </div>}
+                </div>
+              )}
 
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${service.featured ? "bg-secondary/20" : "bg-secondary/10"}`}>
-                <service.icon className={`w-6 h-6 ${service.featured ? "text-secondary" : "text-secondary"}`} />
+              {service.badge && !service.featured && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 rounded-full">
+                  {service.badge}
+                </div>
+              )}
+
+              <div
+                className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
+                  service.featured ? "bg-secondary/20" : "bg-secondary/10"
+                }`}
+              >
+                <service.icon className="w-6 h-6 text-secondary" />
               </div>
 
               <h3 className="text-xl font-serif font-bold mb-2">{service.title}</h3>
-              <p className={`text-sm mb-4 ${service.featured ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
+              <p
+                className={`text-sm mb-4 ${
+                  service.featured ? "text-primary-foreground/80" : "text-muted-foreground"
+                }`}
+              >
                 {service.description}
               </p>
 
               <div className="mb-6">
                 <span className="text-3xl font-serif font-bold">{service.price}</span>
-                <span className={`text-sm ml-1 ${service.featured ? "text-primary-foreground/70" : "text-muted-foreground"}`}>
+                <span
+                  className={`text-sm ml-1 ${
+                    service.featured ? "text-primary-foreground/70" : "text-muted-foreground"
+                  }`}
+                >
                   {service.priceNote}
                 </span>
               </div>
 
               <ul className="space-y-2 mb-6">
-                {service.features.map(feature => <li key={feature} className="flex items-center gap-2 text-sm">
-                    <Check className={`w-4 h-4 flex-shrink-0 ${service.featured ? "text-secondary" : "text-accent"}`} />
+                {service.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-2 text-sm">
+                    <Check
+                      className={`w-4 h-4 flex-shrink-0 ${
+                        service.featured ? "text-secondary" : "text-accent"
+                      }`}
+                    />
                     <span className={service.featured ? "text-primary-foreground/90" : ""}>
                       {feature}
                     </span>
-                  </li>)}
+                  </li>
+                ))}
               </ul>
 
               <Button variant={service.featured ? "hero" : "outline"} className="w-full" asChild>
-                <a href="#booking">Get Started</a>
+                <a href="#booking">
+                  {service.title === "Trial Lesson" ? "Book a Trial" : service.title === "Group Lessons" ? "Join Waiting List" : "Get Started"}
+                </a>
               </Button>
-            </div>)}
+            </div>
+          ))}
         </div>
 
         {/* Languages */}
@@ -99,6 +188,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Services;
