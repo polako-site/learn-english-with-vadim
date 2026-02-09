@@ -67,7 +67,7 @@ const Services = () => {
       icon: Clock,
       title: "Trial Lesson",
       description: "Meet the teacher, discuss your goals and try the format — 30–40 minutes",
-      price: "€13.00",
+      price: "€11.00",
       priceNote: "/ session",
       features: ["Written placement test", "Oral assessment", "Personalised learning strategy", "Future class planning"],
       featured: false,
@@ -167,7 +167,7 @@ const Services = () => {
               </ul>
 
               <Button variant={service.featured ? "hero" : "outline"} className="w-full" asChild>
-                <a href="#booking">
+                <a href={service.title === "Group Lessons" ? "mailto:vadim.panas@bath.edu" : "#booking"}>
                   {service.title === "Trial Lesson" ? "Book a Trial" : service.title === "Group Lessons" ? "Join Waiting List" : "Get Started"}
                 </a>
               </Button>
