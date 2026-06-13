@@ -167,7 +167,7 @@ const Services = () => {
               </ul>
 
               <Button variant={service.featured ? "hero" : "outline"} className="w-full" asChild>
-                <a href={service.title === "Group Lessons" ? "mailto:vadim.panas@bath.edu" : "#booking"}>
+                <a href={service.title === "Group Lessons" ? "mailto:polako.english@proton.me" : "#booking"}>
                   {service.title === "Trial Lesson" ? "Book a Trial" : service.title === "Group Lessons" ? "Join Waiting List" : "Get Started"}
                 </a>
               </Button>

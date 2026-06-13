@@ -38,8 +38,8 @@ const Footer = () => {
               © {currentYear} Polako Inc.
             </div>
             <div className="text-xs">
-              <a href="mailto:vadim.panas@bath.edu" className="hover:text-foreground transition-colors">
-                vadim.panas@bath.edu
+              <a href="mailto:polako.english@proton.me" className="hover:text-foreground transition-colors">
+                polako.english@proton.me
               </a>
               {" · "}Bar, Montenegro · PIB 03479218
             </div>
