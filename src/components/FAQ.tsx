@@ -65,7 +65,7 @@ const faqItems = [
   },
   {
     question: "How do I contact support or ask other questions?",
-    answer: "Feel free to email me at vadim.panas@bath.edu. Response time is typically within 24 hours."
+    answer: "Feel free to email me at polako.english@proton.me. Response time is typically within 24 hours."
   },
 ];
 

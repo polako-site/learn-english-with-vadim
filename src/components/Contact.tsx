@@ -38,14 +38,14 @@ const Contact = () => {
               </div>
             </a>
 
-            <a href="mailto:vadim.panas@bath.edu" className="group flex items-center gap-4 p-6 rounded-2xl bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-all duration-300">
+            <a href="mailto:polako.english@proton.me" className="group flex items-center gap-4 p-6 rounded-2xl bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Mail className="w-7 h-7 text-accent" />
               </div>
               <div>
                 <h3 className="font-serif font-bold text-xl">Email Me</h3>
                 <p className="text-primary-foreground/70 text-sm">
-                  vadim.panas@bath.edu
+                  polako.english@proton.me
                 </p>
               </div>
             </a>
@@ -105,7 +105,7 @@ const Contact = () => {
               />
             </div>
             <Button variant="hero" size="xl" asChild>
-              <a href="mailto:vadim.panas@bath.edu">
+              <a href="mailto:polako.english@proton.me">
                 Pay for Lessons
               </a>
             </Button>
