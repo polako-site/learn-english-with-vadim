@@ -94,12 +94,12 @@ const Contact = () => {
           <div className="text-center mt-12">
             <div className="flex items-center justify-center gap-4 mb-4">
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" 
+                src="/visa.svg" 
                 alt="Visa" 
                 className="h-8 object-contain"
               />
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" 
+                src="/mastercard.svg" 
                 alt="Mastercard" 
                 className="h-8 object-contain"
               />
