@@ -93,16 +93,20 @@ const Contact = () => {
           {/* Payment Button with Logos */}
           <div className="text-center mt-12">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" 
-                alt="Visa" 
-                className="h-8 object-contain"
-              />
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" 
-                alt="Mastercard" 
-                className="h-8 object-contain"
-              />
+              <div className="bg-white rounded-lg px-4 py-2 shadow-sm">
+                <img 
+                  src="/visa.svg" 
+                  alt="Visa" 
+                  className="h-7 object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-lg px-4 py-2 shadow-sm">
+                <img 
+                  src="/mastercard.svg" 
+                  alt="Mastercard" 
+                  className="h-7 object-contain"
+                />
+              </div>
             </div>
             <Button variant="hero" size="xl" asChild>
               <a href="mailto:polako.english@proton.me">
