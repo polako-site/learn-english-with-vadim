@@ -108,7 +108,6 @@ const Contact = () => {
                 />
               </div>
             </div>
-            </div>
             <Button variant="hero" size="xl" asChild>
               <a href="mailto:polako.english@proton.me">
                 Pay for Lessons
